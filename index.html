@@ -15,7 +15,7 @@
 
   <body>
     <a-scene
-      arjs
+      arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'
       embedded
       renderer="logarithmicDepthBuffer: true;"
       vr-mode-ui="enabled: false"
@@ -32,8 +32,7 @@
 
       <a-marker
         type="barcode"
-        value=0
-        size=0.1
+        value="0"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
